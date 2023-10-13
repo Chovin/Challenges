@@ -1,0 +1,5 @@
+You are making a Pokemon Go-inspired game that uses a phone's GPS coordinates to track the player's location on your procedurally generated map. You don't want your players walking into the ocean though, so you need to check with Google Maps to see if the GPS coordinate point is over the ocean. After some searching, you find that there's no simple way of doing this. You will need to determine whether or not a GPS point is over water by checking if the color of Google Maps at that point is more blue than any other color.
+
+Write a function `isOcean` that takes an array of 3 numbers that range from 0-255 inclusive. These are the red, green, and blue values of the map pixel that the current GPS coordinate is over. Return `true` or `false` depending if the pixel is ocean or not. You've decided that it will be considered ocean if the blue value is at least 75% more than both the red and green values.
+
+For example, `isOcean([100,50,175])` should return `true`

@@ -1,0 +1,178 @@
+[
+  {
+    "name": "Climbing Thursday.md",
+    "difficulty": "easy",
+    "tests": [
+      "climbingThursday(true, true, 1) == true",
+      "climbingThursday(false, false, 0) == true",
+      "climbingThursday(false, true, 2) == true",
+      "climbingThursday(false, true, 44) == true",
+      "climbingThursday(false, true, 0) == false",
+      "climbingThursday(false, true, 9) == false"
+    ]
+  },
+  {
+    "name": "Back and Forth Arm.md",
+    "difficulty": "easy",
+    "tests": [
+      "centerArm([0,1]) == 0.5",
+      "centerArm([1,0]) == -0.5",
+      "centerArm([1,1,2,2]) == 0",
+      "centerArm([1,2,3,4,5]) == -0.6"
+    ]
+  },
+  {
+    "name": "Calculator.md",
+    "difficulty": "easy",
+    "tests": [
+      "calculate([2, '+', 3]) == 5",
+      "calculate([2, '*', 3]) == 6",
+      "calculate([2, '-', 3]) == -1",
+      "calculate([2, '/', 3]) == 2/3",
+      "calculate([2, '/', 0]) == Infinity"
+    ]
+  },
+  {
+    "name": "Oceanic.md",
+    "difficulty": "easy",
+    "tests": [
+      "isOcean([0,0,255]) == true",
+      "isOcean([255,0,255]) == false",
+      "isOcean([100,50,175]) == true",
+      "isOcean([100,50,174]) == false",
+      "isOcean([100,50,174]) == false",
+      "isOcean([10,30,53]) == true",
+      "isOcean([10,30,52]) == false"
+    ]
+  },
+  {
+    "name": "Food Mails.md",
+    "difficulty": "easy",
+    "tests": [
+      "hasFood('INSTALL MY APP!') == false",
+      "hasFood('50% off coupon for fries.') == true",
+      "hasFood('The science behind CHICKEN') == false",
+      "hasFood('Cheeseburgers Rule') == true",
+      "hasFood('Acai bowls linked to cancer') == true"
+    ]
+  },
+  {
+    "name": "Hunger Game.md",
+    "difficulty": "easy",
+    "tests": [
+      "eat(0, 'Steak') == 375",
+      "eat(50, 'Cake') == 450",
+      "eat(2, 'Apple') == 35",
+      "eat(20, 'Stew') == 500",
+      "eat(10, 'Cookie') == 85",
+      "eat(1, 'Bread') == 55"
+    ]
+  },
+  {
+    "name": "Nametag.md",
+    "difficulty": "med",
+    "tests": [
+      "nametag(['Bob']) == 'Hello, my name is Bob'",
+      "nametag(['c','j']) == 'Hello, my name is C J'",
+      "nametag(['john','m','SMITH']).includes('John M. Smith')",
+      "nametag(['Jane','Ann','Doe']).includes('Jane Ann Doe')",
+      "nametag(['jAne','PaT','r','ann','M','DoE']).includes('Jane Pat R. Ann M. Doe')"
+    ]
+  },
+  {
+    "name": "Games to Destress.md",
+    "difficulty": "med",
+    "tests": [
+      "pickGame([1,2,2,1,3]) == 'Escape Simulator'",
+      "pickGame([2,4]) == 'Borderlands 3'",
+      "pickGame([1,5,5,5,5,5]) == 'Monopoly Deal'",
+      "pickGame([1,1,1]) == 'Keep Talking and Nobody Explodes'"
+    ]
+  },
+  {
+    "name": "Pidgeon Hole.md",
+    "difficulty": "med",
+    "tests": [
+      "pidgeonHole([null], ['Spot']).join('') == 'Spot'",
+      "pidgeonHole([null], ['Teddy', 'Jenkins']).join('') == 'Teddy'",
+      "pidgeonHole([], ['Spot']).join(' ') == ''",
+      "let a = pidgeonHole([null], []); a.length == 1 && a[0] === null",
+      "let a = pidgeonHole([null, null, 'Timmy', null, null], ['Fluffy', 'Lemon', 'Pin']); a[4] === null && a.join(' ') == 'Fluffy Lemon Timmy Pin '",
+      "pidgeonHole(['Spike', null, 'Reginald', null, 'Matilda'], ['Socks', 'Bacon', 'Willis']).join(' ') == 'Spike Socks Reginald Bacon Matilda'"
+    ]
+  },
+  {
+    "name": "Printing Press.md",
+    "difficulty": "med",
+    "tests": [
+      "printingPress(['^','v','Goose']) == 'goose'",
+      "printingPress(['Goose','^','v']) == 'Goose'",
+      "printingPress(['v','Goose', 'eggs', '^', 'yum']) == 'goose eggs YUM'",
+      "printingPress(['victorY','2^4','oK']) == 'victorY 2^4 oK'",
+      "printingPress(['A', 'Quick', '^', 'Brown', 'Fox', 'v', 'Jumps', 'over', '...']) == 'A Quick BROWN FOX jumps over ...'"
+    ]
+  },
+  {
+    "name": "Shuffle Presents.md",
+    "difficulty": "med",
+    "tests": [
+      "giftExchange([0,1,2], 0).join(' ') == '0 1 2'",
+      "giftExchange([0,2,1,3,4], 1).join(' ') == '4 0 2 1 3'",
+      "giftExchange([0,2,1,3,4], 11).join(' ') == '4 0 2 1 3'",
+      "giftExchange([0,2,1,3,4], -1).join(' ') == '2 1 3 4 0'",
+      "giftExchange([0,2,1,3,4], -11).join(' ') == '2 1 3 4 0'"
+    ]
+  },
+  {
+    "name": "Count Skittles.md",
+    "difficulty": "med",
+    "tests": [
+      "countSkittles('y') == 'Yellow1'",
+      "countSkittles('rrrrrrrrrr') == 'Red10'",
+      "countSkittles('lbloiil') == 'Lime3 Blue1 Orange1 Pink2'",
+      "countSkittles('pp') == 'Purple2'"
+    ]
+  },
+  {
+    "name": "Caesar Cipher.md",
+    "difficulty": "hard",
+    "tests": [
+      "caesarCipher('Pepperoni Pizza') == 'Crccrebav Cvmmn'",
+      "caesarCipher('Sardines and a can of olives') == 'Fneqvarf naq n pna bs byvirf'",
+      "caesarCipher('1 Large Coke and 12 Ranch Dressings') == '1 Ynetr Pbxr naq 12 Enapu Qerffvatf'"
+    ]
+  },
+  {
+    "name": "Caesar Salad Cipher.md",
+    "difficulty": "med",
+    "tests": [
+      "saladCipher(['Romaine'], 2).join(' ') == 'Croutons'",
+      "saladCipher(['Pepper', 'Salt', 'Romaine'], 0).join(' ') == 'Pepper Salt Romaine'",
+      "saladCipher(['Salt', 'Lemon', 'Garlic'], 4).join(' ') == 'Croutons Romaine Vinegar'"
+    ]
+  },
+  {
+    "name": "Tic Tac Toe.md",
+    "difficulty": "hard",
+    "tests": [
+      "move(['O','O',null,null,'X',null,null,null,null], 'X') == 2",
+      "move([null,'X','O',null,'X',null,null,null,null], 'O') == 7",
+      "move([null,'X',null,null,'O',null,'O',null,null], 'X') == 2",
+      "move([null,'X','O',null,null,null,'O',null,null], 'X') == 4",
+      "move(['X','X','O','X','O','O',null,null,'X'], 'O') == 6"
+      
+    ]
+  },
+  {
+    "name": "Simple AI Movement.md",
+    "difficulty": "hard",
+    "tests": [
+      "move([0,0], [0,2], 5).join(' ') == '0 1'",
+      "move([0,0], [-2,0], 5).join(' ') == '-1 0'",
+      "move([0,-4], [0,2], 2).join(' ') == '0 -2'",
+      "move([0,0], [-2,2], 5).join(' ') == '-1 1'",
+      "move([-2,-1], [1,0], 5).join(' ') == '0 0'",
+      "move([-3,2], [3,-1], 5).join(' ') == '1 0'"
+    ]
+  }
+]

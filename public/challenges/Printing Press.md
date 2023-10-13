@@ -1,0 +1,7 @@
+You're walking to work after grabbing a coffee from your favorite coffee shop. You got your backpack on, your computer's inside, you're generally pumped about your upcoming day at work as a programmer. A nearby truck notices your cheerful demeanor and takes it as a horrible offense. After the truck takes its anger out on you, you are [Isekai](https://en.wikipedia.org/wiki/Isekai)'d into a medieval world. Luckily your laptop comes with you. You're determined to make the most out of this and decide to start bringing modern technologies into this new world you've found yourself in. First off, the printing press, but not just any normal old printing press. You want this one to be programmable, so you bring out your laptop and start clickity clacking.
+
+Write a function `printingPress` that takes a list of words and control characters. The character `^` puts the printing press in the "uppercase" state and every word following should be uppercased. Similarly, `v` puts the printing press in the "lowercase" state and every word following should be lowercased.
+
+Once the list of words is processed, return the whole list (minus the control characters) as a space separated string.
+
+For example `printingPress(['A', 'Quick', '^', 'Brown', 'Fox', 'v', 'Jumps', 'over', '...'])` should return `'A Quick BROWN FOX jumps over ...'`
